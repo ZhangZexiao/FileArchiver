@@ -15,7 +15,7 @@ Zip a directory into an archive file OR Unzip an archive file to a directory.
 
 3. Link with static library: FileArchiverStatic.lib
 
-## Artifactory NuGet Repository
+## NuGet Repository
 
 https://api.nuget.org/v3/index.json
 
