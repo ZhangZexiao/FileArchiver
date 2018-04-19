@@ -18,6 +18,8 @@ Zip a directory into an archive file OR Unzip an archive file to a directory.
 ## NuGet Repository
 
 https://api.nuget.org/v3/index.json
+https://www.nuget.org/packages/FileArchiver_win_intel64_v140/
+https://www.nuget.org/packages/FileArchiver_win_intel64_v140_static/
 
 ## Package ID for DLL
 
