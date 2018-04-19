@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>FileArchiver_win_debug_intel64_v140</id>
+		<version>1.0.2</version>
+		<description>Zip a directory into an archive file OR Unzip an archive file to a directory.</description>
+		<authors>Zhang Zexiao</authors>
+		<owners>Shared</owners>
+		<tags>Windows native C++</tags>
+	</metadata>
+	<files>
+		<file src="x64\Debug\FileArchiver.dll" target="bin"/>
+		<file src="x64\Debug\FileArchiver.lib" target="libs"/>
+		<file src="x64\Debug\FileArchiver.pdb" target="libs"/>
+		<file src="FileArchiver\FileArchiver.h" target="inc"/>
+		<file src="x64\Debug\TestFileArchiver.exe" target="content"/>
+		<file src="FileArchiver_win_debug_intel64_v140.targets" target="build"/>
+	</files>
+</package>

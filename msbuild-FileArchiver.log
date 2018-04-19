@@ -1,0 +1,306 @@
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>rem call "vsvars32.bat"
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>set path=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Perforce;C:\Program Files\Perforce\DVCS\;C:\Program Files (x86)\Xoreax\IncrediBuild;C:\Program Files\Collaborator Client;C:\StrawberryPerl\c\bin;C:\StrawberryPerl\perl\site\bin;C:\StrawberryPerl\perl\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\WinMerge;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\ZhangZexiao\AppData\Local\Microsoft\WindowsApps;C:\Users\ZhangZexiao\AppData\Roaming\npm;
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>msbuild /p:Configuration=Debug /t:rebuild FileArchiver.sln
+Microsoft (R) Build Engine version 15.1.1012.6693
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 4/19/2018 11:32:08 AM.
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" on node 1 (rebuild target(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|x64".
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\FileArchiver\FileArchiver.vcxproj" (2) on node 1 (Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Debug\FileArchiver.tlog\FileArchiver.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Debug\FileArchiver.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /Zi /nologo /W3 /WX- /diagnostics:classic /sdl /Od /D FILE_ARCHIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EH
+  sc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc141.pdb" /Gd /TP /
+  errorReport:queue FileArchiver.cpp
+  FileArchiver.cpp
+ResourceCompile:
+  C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"x64\Debug\FileAr
+  chiver.res" FileArchiver.rc
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\link.exe /
+  ERRORREPORT:QUEUE /OUT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiver.dll" /INCREMENTAL:NO /NOLOGO ke
+  rnel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib od
+  bc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PD
+  B:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiver.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Use
+  rs\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiver.lib" /MACHINE:X64 /DLL x64\Debug\FileArchiver.res
+  x64\Debug\FileArchiver.obj
+     Creating library C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiver.lib and object C:\Users\ZhangZexiao\Down
+  loads\FileArchiver\x64\Debug\FileArchiver.exp
+  FileArchiver.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiver.dll
+  FileArchiver.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiver.pdb (Partial PDB)
+FinalizeBuildStatus:
+  Deleting file "x64\Debug\FileArchiver.tlog\unsuccessfulbuild".
+  Touching "x64\Debug\FileArchiver.tlog\FileArchiver.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver\FileArchiver.vcxproj" (Rebuild target(s)).
+
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\FileArchiverStatic\FileArchiverStatic.vcxproj" (3) on node 1 (Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Debug\FileArch.FD78721B.tlog\FileArchiverStatic.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Debug\FileArch.FD78721B.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /Z7 /nologo /W3 /WX- /diagnostics:classic /sdl /Od /D FILE_ARCHIVER_STATIC /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /
+  Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\FileArchiverSt
+  atic.pdb" /Gd /TP /errorReport:queue ..\FileArchiver\FileArchiver.cpp
+cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored [C:\Users\ZhangZexiao\Downloads\FileArchiver\Fi
+leArchiverStatic\FileArchiverStatic.vcxproj]
+  FileArchiver.cpp
+Lib:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\Lib.exe /O
+  UT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiverStatic.lib" /NOLOGO /MACHINE:X64 x64\Debug\FileArchi
+  ver.obj
+  FileArchiverStatic.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiverStatic.lib
+FinalizeBuildStatus:
+  Deleting file "x64\Debug\FileArch.FD78721B.tlog\unsuccessfulbuild".
+  Touching "x64\Debug\FileArch.FD78721B.tlog\FileArchiverStatic.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiverStatic\FileArchiverStatic.vcxproj" (Rebuild t
+arget(s)).
+
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\TestFileArchiver\TestFileArchiver.vcxproj.metaproj" (4) on node 1 (Rebuild target(s)).
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj.metaproj" (4) is building "C:
+\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj" (5) on node 1 (Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Debug\TestFileArchiver.tlog\TestFileArchiver.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Debug\TestFileArchiver.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /Zi /nologo /W3 /WX- /diagnostics:classic /sdl /Od /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wc
+  har_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc141.pdb" /Gd /TP /errorReport:queue Source.cpp
+  Source.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\link.exe /
+  ERRORREPORT:QUEUE /OUT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\TestFileArchiver.exe" /INCREMENTAL:NO /NOLOG
+  O C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiver.lib kernel32.lib user32.lib gdi32.lib winspool.lib co
+  mdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"l
+  evel='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\Test
+  FileArchiver.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\TestFileA
+  rchiver.lib" /MACHINE:X64 x64\Debug\Source.obj
+  TestFileArchiver.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\TestFileArchiver.exe
+  TestFileArchiver.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\TestFileArchiver.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "x64\Debug\TestFileArchiver.tlog\unsuccessfulbuild".
+  Touching "x64\Debug\TestFileArchiver.tlog\TestFileArchiver.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj" (Rebuild targe
+t(s)).
+
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj.metaproj" (Rebu
+ild target(s)).
+
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj.metaproj" (6) on node 1 (Rebuild target(s)).
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj.metaproj" (6) is
+building "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj" (7) on node 1 (
+Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Debug\TestFile.B39AD635.tlog\TestFileArchiverStatic.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Debug\TestFile.B39AD635.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /ZI /nologo /W3 /WX- /diagnostics:classic /sdl /Od /D FILE_ARCHIVER_STATIC /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICO
+  DE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc141.pdb"
+   /Gd /TP /errorReport:queue ..\TestFileArchiver\Source.cpp
+  Source.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\link.exe /
+  ERRORREPORT:QUEUE /OUT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\TestFileArchiverStatic.exe" /INCREMENTAL /NO
+  LOGO C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\FileArchiverStatic.lib kernel32.lib user32.lib gdi32.lib winspo
+  ol.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIF
+  ESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\ZhangZexiao\Downloads\FileArchi
+  ver\x64\Debug\TestFileArchiverStatic.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZhangZexiao
+  \Downloads\FileArchiver\x64\Debug\TestFileArchiverStatic.lib" /MACHINE:X64 x64\Debug\Source.obj
+  TestFileArchiverStatic.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\TestFileArchiverStatic.exe
+  TestFileArchiverStatic.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Debug\TestFileArchiverStatic.pdb (Partia
+  l PDB)
+FinalizeBuildStatus:
+  Deleting file "x64\Debug\TestFile.B39AD635.tlog\unsuccessfulbuild".
+  Touching "x64\Debug\TestFile.B39AD635.tlog\TestFileArchiverStatic.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj" (R
+ebuild target(s)).
+
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj.met
+aproj" (Rebuild target(s)).
+
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (rebuild target(s)).
+
+
+Build succeeded.
+
+"C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (rebuild target) (1) ->
+"C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiverStatic\FileArchiverStatic.vcxproj" (Rebuild target) (3) ->
+(ClCompile target) ->
+  cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored [C:\Users\ZhangZexiao\Downloads\FileArchiver\
+FileArchiverStatic\FileArchiverStatic.vcxproj]
+
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:11.17
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>msbuild /p:Configuration=Release /t:rebuild FileArchiver.sln
+Microsoft (R) Build Engine version 15.1.1012.6693
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 4/19/2018 11:32:20 AM.
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" on node 1 (rebuild target(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|x64".
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\FileArchiver\FileArchiver.vcxproj" (2) on node 1 (Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Release\FileArchiver.tlog\FileArchiver.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Release\FileArchiver.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /Zi /nologo /W3 /WX- /diagnostics:classic /sdl /O2 /Oi /GL /D FILE_ARCHIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE
+   /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc141.pdb"
+   /Gd /TP /errorReport:queue FileArchiver.cpp
+  FileArchiver.cpp
+ResourceCompile:
+  C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"x64\Release\File
+  Archiver.res" FileArchiver.rc
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\link.exe /
+  ERRORREPORT:QUEUE /OUT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiver.dll" /INCREMENTAL:NO /NOLOGO
+  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib
+  odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL /PDB:
+  "C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiver.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /D
+  YNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiver.lib" /MACHINE:X64 /DLL
+  x64\Release\FileArchiver.res
+  x64\Release\FileArchiver.obj
+     Creating library C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiver.lib and object C:\Users\ZhangZexiao\Do
+  wnloads\FileArchiver\x64\Release\FileArchiver.exp
+  Generating code
+  All 482 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  FileArchiver.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiver.dll
+FinalizeBuildStatus:
+  Deleting file "x64\Release\FileArchiver.tlog\unsuccessfulbuild".
+  Touching "x64\Release\FileArchiver.tlog\FileArchiver.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver\FileArchiver.vcxproj" (Rebuild target(s)).
+
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\FileArchiverStatic\FileArchiverStatic.vcxproj" (3) on node 1 (Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Release\FileArch.FD78721B.tlog\FileArchiverStatic.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Release\FileArch.FD78721B.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /Z7 /nologo /W3 /WX- /diagnostics:classic /sdl /O2 /Oi /GL /D FILE_ARCHIVER_STATIC /D NDEBUG /D _LIB /D _UNICODE /D U
+  NICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\File
+  ArchiverStatic.pdb" /Gd /TP /errorReport:queue ..\FileArchiver\FileArchiver.cpp
+  FileArchiver.cpp
+Lib:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\Lib.exe /O
+  UT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiverStatic.lib" /NOLOGO /MACHINE:X64 /LTCG x64\Release
+  \FileArchiver.obj
+  FileArchiverStatic.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiverStatic.lib
+FinalizeBuildStatus:
+  Deleting file "x64\Release\FileArch.FD78721B.tlog\unsuccessfulbuild".
+  Touching "x64\Release\FileArch.FD78721B.tlog\FileArchiverStatic.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiverStatic\FileArchiverStatic.vcxproj" (Rebuild t
+arget(s)).
+
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\TestFileArchiver\TestFileArchiver.vcxproj.metaproj" (4) on node 1 (Rebuild target(s)).
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj.metaproj" (4) is building "C:
+\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj" (5) on node 1 (Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Release\TestFileArchiver.tlog\TestFileArchiver.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Release\TestFileArchiver.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /Zi /nologo /W3 /WX- /diagnostics:classic /sdl /O2 /Oi /GL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise
+  /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc141.pdb" /Gd /TP /errorReport:queue Source.c
+  pp
+  Source.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\link.exe /
+  ERRORREPORT:QUEUE /OUT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\TestFileArchiver.exe" /INCREMENTAL:NO /NOL
+  OGO C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiver.lib kernel32.lib user32.lib gdi32.lib winspool.li
+  b comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUA
+  C:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL /PDB:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\R
+  elease\TestFileArchiver.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\zh
+  angh\Downloads\FileArchiver\x64\Release\TestFileArchiver.lib" /MACHINE:X64 x64\Release\Source.obj
+  Generating code
+  All 300 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  TestFileArchiver.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\TestFileArchiver.exe
+FinalizeBuildStatus:
+  Deleting file "x64\Release\TestFileArchiver.tlog\unsuccessfulbuild".
+  Touching "x64\Release\TestFileArchiver.tlog\TestFileArchiver.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj" (Rebuild targe
+t(s)).
+
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiver\TestFileArchiver.vcxproj.metaproj" (Rebu
+ild target(s)).
+
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (1) is building "C:\Users\ZhangZexiao\Downloads\FileArchiv
+er\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj.metaproj" (6) on node 1 (Rebuild target(s)).
+Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj.metaproj" (6) is
+building "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj" (7) on node 1 (
+Rebuild target(s)).
+_PrepareForClean:
+  Deleting file "x64\Release\TestFile.B39AD635.tlog\TestFileArchiverStatic.lastbuildstate".
+InitializeBuildStatus:
+  Creating "x64\Release\TestFile.B39AD635.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\CL.exe /c
+  /Zi /nologo /W3 /WX- /diagnostics:classic /sdl /O2 /Oi /GL /D FILE_ARCHIVER_STATIC /D NDEBUG /D _CONSOLE /D _UNICODE
+  /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\
+  vc141.pdb" /Gd /TP /errorReport:queue ..\TestFileArchiver\Source.cpp
+  Source.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64\link.exe /
+  ERRORREPORT:QUEUE /OUT:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\TestFileArchiverStatic.exe" /INCREMENTAL:N
+  O /NOLOGO C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\FileArchiverStatic.lib kernel32.lib user32.lib gdi32.lib
+   winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST
+   /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ZhangZexiao\Downloads\FileArchive
+  r\x64\Release\TestFileArchiverStatic.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBAS
+  E /NXCOMPAT /IMPLIB:"C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\TestFileArchiverStatic.lib" /MACHINE:X64 x64\
+  Release\Source.obj
+  Generating code
+  All 578 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  TestFileArchiverStatic.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\TestFileArchiverStatic.exe
+  TestFileArchiverStatic.vcxproj -> C:\Users\ZhangZexiao\Downloads\FileArchiver\x64\Release\TestFileArchiverStatic.pdb (Full
+   PDB)
+FinalizeBuildStatus:
+  Deleting file "x64\Release\TestFile.B39AD635.tlog\unsuccessfulbuild".
+  Touching "x64\Release\TestFile.B39AD635.tlog\TestFileArchiverStatic.lastbuildstate".
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj" (R
+ebuild target(s)).
+
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\TestFileArchiverStatic\TestFileArchiverStatic.vcxproj.met
+aproj" (Rebuild target(s)).
+
+Done Building Project "C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver.sln" (rebuild target(s)).
+
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:12.14
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>pause
+Press any key to continue . . .

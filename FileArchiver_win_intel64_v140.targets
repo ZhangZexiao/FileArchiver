@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ConfigurationDirectory>$(Configuration)</ConfigurationDirectory>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Optimize'">
+		<ConfigurationDirectory>Release</ConfigurationDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Link>
+			<AdditionalDependencies>$(MSBuildThisFileDirectory)..\libs\$(ConfigurationDirectory)\FileArchiver.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\bin\$(ConfigurationDirectory)\FileArchiver.dll"/>
+		<ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\libs\$(ConfigurationDirectory)\FileArchiver.pdb"/>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>rem https://www.nuget.org/downloads
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>rem https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>nuget pack FileArchiver_win_intel64_v140.nuspec
+Attempting to build package from 'FileArchiver_win_intel64_v140.nuspec'.
+Successfully created package 'C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver_win_intel64_v140.1.0.5.nupkg'.
+WARNING: Issue found with package 'FileArchiver_win_intel64_v140'.
+
+WARNING: Issue: Assembly outside lib folder.
+WARNING: Description: The assembly 'bin\Release\FileArchiver.dll' is not inside the 'lib' folder and hence it won't be added as reference when the package is installed into a project.
+WARNING: Solution: Move it into the 'lib' folder if it should be referenced.
+
+WARNING: Issue: Assembly outside lib folder.
+WARNING: Description: The assembly 'bin\Debug\FileArchiver.dll' is not inside the 'lib' folder and hence it won't be added as reference when the package is installed into a project.
+WARNING: Solution: Move it into the 'lib' folder if it should be referenced.
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>nuget pack FileArchiver_win_intel64_v140_static.nuspec
+Attempting to build package from 'FileArchiver_win_intel64_v140_static.nuspec'.
+Successfully created package 'C:\Users\ZhangZexiao\Downloads\FileArchiver\FileArchiver_win_intel64_v140_static.1.0.5.nupkg'.
+
+C:\Users\ZhangZexiao\Downloads\FileArchiver>pause
+Press any key to continue . . .

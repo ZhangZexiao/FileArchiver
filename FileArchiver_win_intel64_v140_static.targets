@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ConfigurationDirectory>$(Configuration)</ConfigurationDirectory>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Optimize'">
+		<ConfigurationDirectory>Release</ConfigurationDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Link>
+			<AdditionalDependencies>$(MSBuildThisFileDirectory)..\libs\$(ConfigurationDirectory)\FileArchiverStatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+		</Link>
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>FILE_ARCHIVER_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+	</ItemDefinitionGroup>
+</Project>

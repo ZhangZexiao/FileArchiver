@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileArchiver", "FileArchiver\FileArchiver.vcxproj", "{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestFileArchiver", "TestFileArchiver\TestFileArchiver.vcxproj", "{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC} = {937068EF-1C6B-4124-95E9-9CDAF4FF03FC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileArchiverStatic", "FileArchiverStatic\FileArchiverStatic.vcxproj", "{FD78721B-DD90-4E78-93FE-756E2270282A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestFileArchiverStatic", "TestFileArchiverStatic\TestFileArchiverStatic.vcxproj", "{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD78721B-DD90-4E78-93FE-756E2270282A} = {FD78721B-DD90-4E78-93FE-756E2270282A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Debug|x64.ActiveCfg = Debug|x64
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Debug|x64.Build.0 = Debug|x64
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Debug|x86.Build.0 = Debug|Win32
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Release|x64.ActiveCfg = Release|x64
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Release|x64.Build.0 = Release|x64
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Release|x86.ActiveCfg = Release|Win32
+		{937068EF-1C6B-4124-95E9-9CDAF4FF03FC}.Release|x86.Build.0 = Release|Win32
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Debug|x64.ActiveCfg = Debug|x64
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Debug|x64.Build.0 = Debug|x64
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Debug|x86.ActiveCfg = Debug|Win32
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Debug|x86.Build.0 = Debug|Win32
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Release|x64.ActiveCfg = Release|x64
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Release|x64.Build.0 = Release|x64
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Release|x86.ActiveCfg = Release|Win32
+		{FDDAC23D-AAFB-4BE8-B8EB-861F5D3D24F6}.Release|x86.Build.0 = Release|Win32
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Debug|x64.ActiveCfg = Debug|x64
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Debug|x64.Build.0 = Debug|x64
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Debug|x86.Build.0 = Debug|Win32
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Release|x64.ActiveCfg = Release|x64
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Release|x64.Build.0 = Release|x64
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Release|x86.ActiveCfg = Release|Win32
+		{FD78721B-DD90-4E78-93FE-756E2270282A}.Release|x86.Build.0 = Release|Win32
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Debug|x64.ActiveCfg = Debug|x64
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Debug|x64.Build.0 = Debug|x64
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Debug|x86.Build.0 = Debug|Win32
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Release|x64.ActiveCfg = Release|x64
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Release|x64.Build.0 = Release|x64
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Release|x86.ActiveCfg = Release|Win32
+		{B39AD635-A9D2-4ED0-BD9E-1E309D47555D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
